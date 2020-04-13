@@ -3,7 +3,7 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Text</th>
+    <th>Post</th>
     <th></th>
   </tr>
  
@@ -11,7 +11,7 @@
     <tr>
       <td><%= post.title %></td>
       <td><%= post.text %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
+      <td><%= link_to '<button type="button">Show</button>'.html_safe, post_path(post)%></td>
     </tr>
   <% end %>
 </table>
