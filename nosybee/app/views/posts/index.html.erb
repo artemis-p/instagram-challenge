@@ -4,7 +4,7 @@
   <tr>
     <th>Title</th>
     <th>Post</th>
-    <th></th>
+    <th colspan="2"></th>
   </tr>
  
   <% @posts.each do |post| %>
@@ -12,6 +12,7 @@
       <td><%= post.title %></td>
       <td><%= post.text %></td>
       <td><%= link_to '<button type="button">Show</button>'.html_safe, post_path(post)%></td>
+      <td><%= link_to '<button type="button">Edit</button>'.html_safe, edit_post_path(post) %></td>
     </tr>
   <% end %>
 </table>
